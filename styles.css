@@ -1,0 +1,115 @@
+html, body{
+    min-width: 200px;
+    color: #4d4e53;
+    background-color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  body {
+    display: block;
+    margin: 9px;
+  }
+  
+  section, main, header, nav, ul, code {
+    display: block;
+  }
+  
+  #main-doc{
+    position: absolute;
+    margin-left: 350px;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+  
+  header{
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 100; /* Corrigido */
+  }
+  
+  #navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  li{ 
+    text-align: left;
+  }
+  
+  #navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+  }
+  
+  #navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-inline-start: 40px;
+  }
+  
+  code {
+    text-align: left;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    #navbar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      border-right: none;
+    }
+  
+    #main-doc {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  
+    header {
+      font-size: 1.5rem;
+    }
+  
+    #navbar a {
+      padding: 10px;
+    }
+  
+    ul {
+      padding-inline-start: 20px;
+    }
+  
+    code {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
